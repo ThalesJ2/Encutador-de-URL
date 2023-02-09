@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtador de Link</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <main>
+        <section class="container-main-header">
+            <div class="container-main-text">
+                <h1>Encurtador de Link</h1>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, 
+                    reprehenderit! Hic perferendis delectus fugit explicabo repudiandae eveniet quae 
+                    obcaecati eligendi, quam consectetur cumque incidunt nihil. Eligendi perferendis 
+                    exercitationem unde expedita!
+                </span>
+            </div>
+            <div class="container-main-image">
+                <img src="/image/background main.jpg" alt="imagem background tecnologia">
+            </div>
+        </section>
+
+        <section class="container-encurtador">
+            <div class="encurtador">
+                <form action="/url" method="POST" class="t">
+                    <input type="text" name="url" placeholder="Cole o Link Aqui">
+                    <button type="submit" class="btn">Encurtar</button>
+                </form>
+  
+                <div class="link-encurtado">
+                    <span style="border-bottom: 1px solid #fff;">
+                        <% if (url != undefined) { %>
+                             <a href="http://localhost:8080/minor/<%= url %>" style="color:black;" target="_blank" class="link" >localhost:8080/minor/<%= url %></a>
+                            <% } %>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+.container-main-header{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    justify-content: center;
+    padding: 2rem 6rem;
+    width: 100%;
+}
+
+.container-main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+    width: 50%;
+}
+
+.container-main-text h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container-main-text span{
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+
+.container-main-image{
+    max-height: 100%;
+    max-width: 55%;
+}
+
+.container-main-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.container-encurtador{
+    align-items: center;
+    background-color: #0B1736;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+}
+
+.encurtador{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: auto;
+    padding: 12px 0;
+    width: 80%;
+ 
+}
+.t{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    height: auto;
+    padding: 12px 0;
+    width: 80%;
+}
+
+.encurtador input{
+    font-size: 1.6rem;
+    padding: 10px 12px;
+    outline: none;
+    width: 75%;
+}
+
+.btn{
+    background-color: #0075D9;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+    padding: 16px 0;
+    width: 22%;
+}
+.link-encurtado{
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: start;
+    padding: 8px;
+    width: 80%;
+}
+
+.link-encurtado span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a:link{
+    text-decoration: none;
+}
